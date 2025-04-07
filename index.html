@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Button Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { padding: 12px 20px; font-size: 16px; }
+    #output { margin-top: 20px; font-size: 18px; color: green; }
+  </style>
+</head>
+<body>
+
+<h2>Test: Add Hazard Button</h2>
+<button id="testButton" type="button">+ Add Hazard</button>
+<div id="output"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("testButton");
+    const output = document.getElementById("output");
+
+    btn.addEventListener("click", function () {
+      output.textContent = "Button funktioniert!";
+    });
+  });
+</script>
+
+</body>
+</html>
